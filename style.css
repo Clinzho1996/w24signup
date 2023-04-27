@@ -18,9 +18,6 @@ input,
 select {
   height: 55px;
 }
-/* .tab {
-  display: none;
-} */
 
 .steps {
   display: flex;
