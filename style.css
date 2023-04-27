@@ -27,6 +27,12 @@ select {
 .checks i {
   color: #ee6627;
 }
+
+.steps .active {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #ee6627;
+  margin-bottom: -14px;
+}
 .details {
   padding-left: 20px;
   padding-top: 0px;
