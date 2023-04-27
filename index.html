@@ -58,95 +58,111 @@
 
     <!-- Body -->
     <section class="form">
-      <center>
-        <img src="./images/logo.png" alt="logo" width="50px" />
-        <h3>Welcome to warehouse24,</h3>
-        <p>Please select your main category.</p>
-      </center>
+      <form id="regForm" action="#">
+        <div class="tab">
+          <center>
+            <img src="./images/logo.png" alt="logo" width="50px" />
+            <h3>Welcome to warehouse24,</h3>
+            <p>Please select your main category.</p>
+          </center>
 
-      <!-- categories -->
-      <form action="#" class="categories">
-        <div class="input">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <img src="./images/fashion.png" alt="" width="30px" />
-          <label class="form-check-label" for="flexCheckDefault">
-            Fashion & Accessories
-          </label>
-        </div>
-        <div class="input">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <img src="./images/beauty.png" alt="" width="30px" />
-          <label class="form-check-label" for="flexCheckDefault">
-            Beauty & Cosmetics
-          </label>
-        </div>
-        <div class="input">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <img src="./images/baby.png" alt="" width="30px" />
-          <label class="form-check-label" for="flexCheckDefault">
-            Baby & Kids
-          </label>
-        </div>
-        <div class="input">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <img src="./images/home.png" alt="" width="30px" />
-          <label class="form-check-label" for="flexCheckDefault">
-            Home & Kitchen
-          </label>
-        </div>
-        <div class="input">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <img src="./images/home.png" alt="" width="30px" />
-          <label class="form-check-label" for="flexCheckDefault">
-            Home & Kitchen
-          </label>
-        </div>
-        <div class="input">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="flexCheckDefault"
-          />
-          <img src="./images/home.png" alt="" width="30px" />
-          <label class="form-check-label" for="flexCheckDefault">
-            Home & Kitchen
-          </label>
+          <!-- categories -->
+
+          <div class="categories">
+            <div class="input">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                oninput="this.className = ''"
+              />
+              <img src="./images/fashion.png" alt="" width="30px" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Fashion & Accessories
+              </label>
+            </div>
+            <div class="input">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                oninput="this.className = ''"
+              />
+              <img src="./images/beauty.png" alt="" width="30px" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Beauty & Cosmetics
+              </label>
+            </div>
+            <div class="input">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                oninput="this.className = ''"
+              />
+              <img src="./images/baby.png" alt="" width="30px" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Baby & Kids
+              </label>
+            </div>
+            <div class="input">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                oninput="this.className = ''"
+              />
+              <img src="./images/home.png" alt="" width="30px" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Home & Kitchen
+              </label>
+            </div>
+            <div class="input">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                oninput="this.className = ''"
+              />
+              <img src="./images/home.png" alt="" width="30px" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Home & Kitchen
+              </label>
+            </div>
+            <div class="input">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+                oninput="this.className = ''"
+              />
+              <img src="./images/home.png" alt="" width="30px" />
+              <label class="form-check-label" for="flexCheckDefault">
+                Home & Kitchen
+              </label>
+            </div>
+          </div>
         </div>
       </form>
     </section>
 
     <!-- footer -->
     <div class="page">
-      <button class="prev">
+      <button class="prev" type="button" id="prevBtn" onclick="nextPrev(-1)">
         <i class="fa-solid fa-left-long"></i> Back to previous page
       </button>
-      <button class="next">
+      <button
+        class="next"
+        type="button"
+        id="nextBtn"
+        onclick="window.location.href='about.html'"
+      >
         Next Step <i class="fa-solid fa-right-long"></i>
       </button>
     </div>
@@ -155,5 +171,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="main.js"></script> -->
   </body>
 </html>

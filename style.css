@@ -14,6 +14,14 @@ html {
   border-bottom: 5px solid #e2e3e7;
 }
 
+input,
+select {
+  height: 55px;
+}
+/* .tab {
+  display: none;
+} */
+
 .steps {
   display: flex;
   justify-content: flex-start;
@@ -121,4 +129,20 @@ html {
   background-color: #1e2b3b;
   color: #fff;
   border: 1px solid #1e2b3b;
+}
+
+.tab-about {
+  padding-top: 80px;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+.about {
+  padding: 1% 6%;
+}
+
+.about label {
+  color: #1e2b3b80;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 40px;
 }

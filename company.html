@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warehouse24</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="head">
+      <div class="steps">
+        <div class="checks">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="details">
+          <h3>Step 1</h3>
+          <p>Please provide the required details</p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="checks">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="details">
+          <h3>Step 2</h3>
+          <p>Please provide the required details</p>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="checks">
+          <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="details">
+          <h3>Step 3</h3>
+          <p>Please provide the required details</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <section class="form">
+      <form id="regForm" action="#">
+        <div class="tab">
+          <center>
+            <img src="./images/logo.png" alt="logo" width="50px" />
+            <h3>Tell us about your company
+            </h3>
+            <p>Please provide the required details</p>
+          </center>
+
+        <div class="tab">
+          <div class="row tab-about about">
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Registered Name of Company*
+                  </label>
+                  <input type="text" class="form-control" placeholder="Name of company" aria-label="Registered name of company" required>
+            </div>
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    CAC Registration Number (BN, RC etc)*
+                  </label>
+                  <input type="text" class="form-control" placeholder="1234568AD" aria-label="CAC Registration Number" required>
+            </div>
+          </div>
+          <div class="row tab-about about">
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Company Phone Number
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text"><img src="./images/flag.png" alt="" width="20px">    NIG <i class="fa-solid fa-chevron-down"></i> </span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInputGroup1" placeholder="1234568AD">
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Tax Identification Number (TIN)*
+                  </label>
+                  <input type="text" class="form-control" placeholder="9876543TIN" aria-label="CAC Registration Number" required>
+            </div>
+          </div>
+          <div class="row tab-about about">
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Company Whatsapp Number
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text"><img src="./images/flag.png" alt="" width="20px">    NIG <i class="fa-solid fa-chevron-down"></i> </span>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="floatingInputGroup1" placeholder="1234568AD">
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Upload Documents (not compulsory)
+                  </label>
+                  <input class="form-control" type="file" id="formFileMultiple" multiple>
+            </div>
+          </div>
+          <div class="row about">
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Company Address*
+                  </label>
+                  <input type="text" class="form-control" placeholder="Name of company" aria-label="Registered name of company" required>
+            </div>
+            <div class="col">
+                <label class="form-check-label" for="flexCheckDefault">
+                    How do you deliver products to your customers?
+                  </label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected> I have a 3rd party logistics company</option>
+                  <option value="1">I don'thave a 3rd party logistics company</option>
+                </select>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer -->
+    <div class="page">
+      <button class="prev" type="button" id="prevBtn" onclick="window.location.href='about.html'">
+        <i class="fa-solid fa-left-long"></i> Back to previous page
+      </button>
+      <button class="next" type="button" id="nextBtn" onclick="location.href='warehouse24.ng/form-success'">
+        Submit <i class="fa-solid fa-right-long"></i>
+      </button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
